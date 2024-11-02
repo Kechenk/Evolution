@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: 'Milky Vantage';
+  src: url('https://fonts.cdnfonts.com/s/118477/MilkyVintage-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Space Mono'), url('https://fonts.cdnfonts.com/s/15317/SpaceMono-Regular.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('register-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+
+.headline {
+  width: 40%;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+.headline a{
+  font-family: "Courier Prime";
+  color: #FF7A52;
+  font-size: 0.8rem;
+}
+
+.headline a img{
+  width: 1.2rem;
+  position: relative;
+  top: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.headline h1{
+  font-family: "Milky Vantage";
+  color: #FFFFFF;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.headline h3{
+  font-family: "Space mono";
+  color: #FFFFFF;
+  font-weight: 300;
+
+}
+
+.container {
+  width: 40%;
+  margin: 1rem auto;
+  background-color: #D9D9D9;
+  text-decoration: none;
+  color: #FF4500;
+  font-size: 1rem;
+  display: block;
+  font-weight: bold;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.login-form {
+  margin: 3rem 2rem;
+}
+
+.login-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  font-family: 'Source Serif 4', serif;
+  color: black;
+}
+
+.login-form label span{
+  color: #EE1417;
+  font-family: "Space Mono";
+  position: relative;
+  bottom: 0.3rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: "Space Mono";
+  border: 1px #444444 solid;
+
+}
+
+.login-form input::placeholder{
+  color: #8f8f8f;
+}
+
+.login-form small {
+  display: block;
+  font-family: "Courier Prime";
+  font-weight: 400;
+  color: #444444;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  margin-left: 0.5rem;
+}
+
+.password-input{
+  display: flex;
+  position: relative;
+}
+
+.password-input .passwordImg{
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-70%);
+  width: 2rem;
+  cursor: pointer;
+}
+
+.login-form .forgot-password{
+  font-family: "courier prime";
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  margin: 0px 1rem;
+  color: #FF7A52;
+}
+
+.btn-login {
+  width: 100%;
+  background-color: #FF7A52;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 1.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+}
+
+.btn-login:hover {
+  background-color: #FF4500;
+}
+
+.register-prompt {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  color: #444444;
+}
+
+.register-link {
+  color: #FF7A52;
+  text-decoration: none;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+.footer-colors {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-colors span {
+  width: 20%;
+  height: 3rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .headline{
+    width: 60%;
+  }
+  .container {
+    width: 60%;
+  }
+}
+  
+@media only screen and (max-width: 520px) {
+  .headline{
+    width: 85%;
+  }
+  .headline h3{
+    font-size: 1rem;
+  }
+  .container {
+    width: 85%;
+    border-radius: 1rem 1rem 2rem 2rem;
+  }
+
+  .login-form {
+    margin: 2rem 1rem;
+  }
+
+  .login-form input::placeholder{
+    font-size: 0.8rem;
+  }
+
+  .register-prompt{
+    width: 90%;
+    margin: auto;
+  }
+}
+  
