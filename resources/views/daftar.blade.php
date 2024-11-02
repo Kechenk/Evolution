@@ -23,10 +23,10 @@
 
             <!-- Phone -->
             <div class="mt-4">
-                <x-input-label for="phone" :value="__('Nomor Telepon')" />
+                <x-input-label for="phone" :value="__('Phone')" />
                 <div class="phone-input block mt-1 w-full">
                     <span>+62</span>
-                    <x-text-input id="phone" class="phone-input-form" type="tel" name="phone" :value="old('phone')" placeholder="Masukkan Nomor Telepon" required />
+                    <x-text-input id="phone" class="phone-input-form" type="tel" name="phone" :value="old('phone')" placeholder="Masukkan Nomor Telepon" required pattern="[0-9]*" />
                 </div>
                 <small>cth: 81235647855</small>
                 <x-input-error :messages="$errors->get('phone')" class="mt-2" />
