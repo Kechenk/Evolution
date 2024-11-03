@@ -57,14 +57,14 @@
                 <x-input-error :messages="$errors->get('institusi')" class="mt-2" />
             </div>
 
+                <x-primary-button class="ms-4 btn-register">
+                    {{ __('Register') }}
+                </x-primary-button>
             <!-- Submit Button -->
             <div class="flex items-center justify-end mt-4">
                 <p class="login-prompt">
                     Sudah memiliki akun? <a href="{{ route('login') }}" class="login-link">Login</a> disini
                 </p>
-                <x-primary-button class="ms-4">
-                    {{ __('Register') }}
-                </x-primary-button>
             </div>
         </form>
 
