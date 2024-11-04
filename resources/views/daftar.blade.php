@@ -10,14 +10,16 @@
             <!-- Name -->
             <div class="mt-4">
                 <x-input-label for="name" :value="__('Nama')" />
-                <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" placeholder="Masukkan Nama Lengkap" />
+                <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')"
+                    required autofocus autocomplete="name" placeholder="Masukkan Nama Lengkap" />
                 <x-input-error :messages="$errors->get('name')" class="mt-2" />
             </div>
 
             <!-- Email -->
             <div class="mt-4">
                 <x-input-label for="email" :value="__('Email')" />
-                <x-text-input id="email" class="block mt-1 w-full" type="text" name="email" :value="old('email')" required autocomplete="email" placeholder="Masukkan Email" />
+                <x-text-input id="email" class="block mt-1 w-full" type="text" name="email" :value="old('email')"
+                    required autocomplete="email" placeholder="Masukkan Email" />
                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
             </div>
 
@@ -26,7 +28,8 @@
                 <x-input-label for="phone" :value="__('Phone')" />
                 <div class="phone-input block mt-1 w-full">
                     <span>+62</span>
-                    <x-text-input id="phone" class="phone-input-form" type="tel" name="phone" :value="old('phone')" placeholder="Masukkan Nomor Telepon" required pattern="[0-9]*" />
+                    <x-text-input id="phone" class="phone-input-form" type="tel" name="phone"
+                        :value="old('phone')" placeholder="Masukkan Nomor Telepon" required pattern="[0-9]*" />
                 </div>
                 <small>cth: 81235647855</small>
                 <x-input-error :messages="$errors->get('phone')" class="mt-2" />
@@ -36,34 +39,38 @@
             <div class="mt-4">
                 <x-input-label for="password" :value="__('Password')" />
                 <div class="password-input">
-                    <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" placeholder="Masukkan Password" />
+                    <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required
+                        autocomplete="new-password" placeholder="Masukkan Password" />
                     <img id="togglePasswordImg" class="passwordImg" src="./hidden.png" alt="">
                 </div>
-                <small>Password harus mengandung minimal 8 karakter yang terdiri atas kombinasi huruf besar, huruf kecil, dan angka</small>
+                <small>Password harus mengandung minimal 8 karakter yang terdiri atas kombinasi huruf besar, huruf
+                    kecil, dan angka</small>
                 <x-input-error :messages="$errors->get('password')" class="mt-2" />
             </div>
 
             <!-- Confirm Password -->
             <div class="mt-4">
                 <x-input-label for="password_confirmation" :value="__('Konfirmasi Password')" />
-                <x-text-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" placeholder="Ulangi Password" />
+                <x-text-input id="password_confirmation" class="block mt-1 w-full" type="password"
+                    name="password_confirmation" required autocomplete="new-password" placeholder="Ulangi Password" />
                 <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
             </div>
 
             <!-- Institution -->
             <div class="mt-4">
                 <x-input-label for="institusi" :value="__('Asal Instansi')" />
-                <x-text-input id="institusi" class="block mt-1 w-full" type="text" name="institusi" :value="old('institusi')" placeholder="Masukkan Asal Instansi" />
+                <x-text-input id="institusi" class="block mt-1 w-full" type="text" name="institusi"
+                    :value="old('institusi')" placeholder="Masukkan Asal Instansi" />
                 <x-input-error :messages="$errors->get('institusi')" class="mt-2" />
             </div>
 
-                <x-primary-button class="ms-4 btn-register">
-                    {{ __('Register') }}
-                </x-primary-button>
+            <x-primary-button class="ms-4 btn-register">
+                {{ __('Register') }}
+            </x-primary-button>
             <!-- Submit Button -->
             <div class="flex items-center justify-end mt-4">
                 <p class="login-prompt">
-                    Sudah memiliki akun? <a href="{{ route('login') }}" class="login-link">Login</a> disini
+                    Sudah memiliki akun? <a href="/masuk" class="login-link">Login</a> disini
                 </p>
             </div>
         </form>
