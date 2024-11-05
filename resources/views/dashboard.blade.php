@@ -9,17 +9,15 @@
       <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
         <div class="p-6 text-gray-900 dark:text-gray-100 text-2xl">
           Selamat Datang 
-          {{-- <div class="mt-4"> Nama : {{ Auth::user()->name }}</div>
-          <div class="mt-2"> Email : {{ Auth::user()->email }}</div> --}}
         </div>
       </div>
     </div>
   </div>
 <a href="{{ route('electra') }}">
   <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-    <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+    <div class="bg-green-400 dark:bg-green-800 overflow-hidden shadow-sm sm:rounded-lg">
       <div class="p-6 text-gray-900 dark:text-gray-100 text-2xl">
-        Silahkan Klik Link Berikut Untuk Mendaftarkan Electra
+        Silahkan Klik Banner Berikut Untuk Mendaftarkan Electra
       </div>
     </div>
   </div>
