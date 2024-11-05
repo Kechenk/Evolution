@@ -25,7 +25,7 @@ Route::get('/electra', function () {
 })->middleware(['auth', 'verified'])->name('electra');
 
 Route::post('/register/tunggal', [ParticipantController::class, 'registerTunggal'])->name('tunggal.register');
-Route::post('/register/beregu', [ParticipantController::class, 'registerBeregu'])->name('beregu.register');
+Route::post('/register/beregu', [ParticipantController::class, 'registerberegu'])->name('beregu.register');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
