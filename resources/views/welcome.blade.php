@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVOLUTION 2025</title>
     <link rel="stylesheet" href="style_lama.css">
+    <script src="https://kit.fontawesome.com/dd0cf0a7f4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
