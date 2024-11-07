@@ -12,18 +12,18 @@ return new class extends Migration
    */
   public function up(): void
   {
-    Schema::create('group_participant', function (Blueprint $table) {
+    Schema::create('group_participants', function (Blueprint $table) {
       $table->id();
       $table->string('team');
       $table->string('information');
       $table->string('leader_name');
       $table->string('leader_grade');
       $table->string('leader_whatsapp');
-      $table->string('link_tweet1');
+      $table->string('leader_tweet');
       $table->string('member_name');
       $table->string('member_grade');
       $table->string('member_whatsapp');
-      $table->string('link_tweet2');
+      $table->string('member_tweet');
       $table->string('school_name');
       $table->string('school_address');
       $table->string('region');
@@ -36,6 +36,6 @@ return new class extends Migration
    */
   public function down(): void
   {
-    Schema::dropIfExists('group_participant');
+    Schema::dropIfExists('group_participants');
   }
 };
