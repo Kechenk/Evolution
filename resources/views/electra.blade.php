@@ -125,8 +125,47 @@
 
             <div class="mb-4">
               <label class="block text-gray-700 dark:text-gray-300">Region</label>
-              <input type="text" name="region"
+              <select name="region" id="region-select"
                 class="w-full p-2 border rounded-xl border-gray-300 dark:border-gray-700">
+                <option value="">-- Pilih Provinsi --</option>
+                <option value="Aceh">Aceh</option>
+                <option value="Bali">Bali</option>
+                <option value="Banten">Banten</option>
+                <option value="Bengkulu">Bengkulu</option>
+                <option value="DI Yogyakarta">DI Yogyakarta</option>
+                <option value="DKI Jakarta">DKI Jakarta</option>
+                <option value="Gorontalo">Gorontalo</option>
+                <option value="Jambi">Jambi</option>
+                <option value="Jawa Barat">Jawa Barat</option>
+                <option value="Jawa Tengah">Jawa Tengah</option>
+                <option value="Jawa Timur">Jawa Timur</option>
+                <option value="Kalimantan Barat">Kalimantan Barat</option>
+                <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+                <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+                <option value="Kalimantan Timur">Kalimantan Timur</option>
+                <option value="Kalimantan Utara">Kalimantan Utara</option>
+                <option value="Kepulauan Bangka Belitung">Kepulauan Bangka Belitung</option>
+                <option value="Kepulauan Riau">Kepulauan Riau</option>
+                <option value="Lampung">Lampung</option>
+                <option value="Maluku">Maluku</option>
+                <option value="Maluku Utara">Maluku Utara</option>
+                <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+                <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+                <option value="Papua">Papua</option>
+                <option value="Papua Barat">Papua Barat</option>
+                <option value="Papua Selatan">Papua Selatan</option>
+                <option value="Papua Tengah">Papua Tengah</option>
+                <option value="Papua Pegunungan">Papua Pegunungan</option>
+                <option value="Riau">Riau</option>
+                <option value="Sulawesi Barat">Sulawesi Barat</option>
+                <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+                <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+                <option value="Sulawesi Utara">Sulawesi Utara</option>
+                <option value="Sumatra Barat">Sumatra Barat</option>
+                <option value="Sumatra Selatan">Sumatra Selatan</option>
+                <option value="Sumatra Utara">Sumatra Utara</option>
+              </select>
             </div>
 
             {{-- <div class="mb-4">
@@ -191,8 +230,7 @@
 
             <div class="mb-4">
               <x-input-label class="block text-gray-700 dark:text-gray-300">Kelas</x-input-label>
-              <select id="leader_grade" name="leader_grade" class="block mt-1 w-full rounded-xl" required
-                autofocus>
+              <select id="leader_grade" name="leader_grade" class="block mt-1 w-full rounded-xl" required autofocus>
                 <option value="X" {{ old('leader_grade') == 'X' ? 'selected' : '' }}>X</option>
                 <option value="XI" {{ old('leader_grade') == 'XI' ? 'selected' : '' }}>XI</option>
                 <option value="XII" {{ old('leader_grade') == 'XII' ? 'selected' : '' }}>XII</option>
@@ -207,8 +245,7 @@
 
             <div class="mb-4">
               <x-input-label class="block text-gray-700 dark:text-gray-300">Kelas</x-input-label>
-              <select id="member_grade" name="member_grade" class="block mt-1 w-full rounded-xl" required
-                autofocus>
+              <select id="member_grade" name="member_grade" class="block mt-1 w-full rounded-xl" required autofocus>
                 <option value="X" {{ old('member_grade') == 'X' ? 'selected' : '' }}>X</option>
                 <option value="XI" {{ old('member_grade') == 'XI' ? 'selected' : '' }}>XI</option>
                 <option value="XII" {{ old('member_grade') == 'XII' ? 'selected' : '' }}>XII</option>
@@ -263,9 +300,49 @@
 
             <div class="mb-4">
               <label class="block text-gray-700 dark:text-gray-300">Region</label>
-              <input type="text" name="region"
+              <select name="region" id="region-select"
                 class="w-full p-2 border rounded-xl border-gray-300 dark:border-gray-700">
+                <option value="">-- Pilih Provinsi --</option>
+                <option value="Aceh">Aceh</option>
+                <option value="Bali">Bali</option>
+                <option value="Banten">Banten</option>
+                <option value="Bengkulu">Bengkulu</option>
+                <option value="DI Yogyakarta">DI Yogyakarta</option>
+                <option value="DKI Jakarta">DKI Jakarta</option>
+                <option value="Gorontalo">Gorontalo</option>
+                <option value="Jambi">Jambi</option>
+                <option value="Jawa Barat">Jawa Barat</option>
+                <option value="Jawa Tengah">Jawa Tengah</option>
+                <option value="Jawa Timur">Jawa Timur</option>
+                <option value="Kalimantan Barat">Kalimantan Barat</option>
+                <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+                <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+                <option value="Kalimantan Timur">Kalimantan Timur</option>
+                <option value="Kalimantan Utara">Kalimantan Utara</option>
+                <option value="Kepulauan Bangka Belitung">Kepulauan Bangka Belitung</option>
+                <option value="Kepulauan Riau">Kepulauan Riau</option>
+                <option value="Lampung">Lampung</option>
+                <option value="Maluku">Maluku</option>
+                <option value="Maluku Utara">Maluku Utara</option>
+                <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+                <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+                <option value="Papua">Papua</option>
+                <option value="Papua Barat">Papua Barat</option>
+                <option value="Papua Selatan">Papua Selatan</option>
+                <option value="Papua Tengah">Papua Tengah</option>
+                <option value="Papua Pegunungan">Papua Pegunungan</option>
+                <option value="Riau">Riau</option>
+                <option value="Sulawesi Barat">Sulawesi Barat</option>
+                <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+                <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+                <option value="Sulawesi Utara">Sulawesi Utara</option>
+                <option value="Sumatra Barat">Sumatra Barat</option>
+                <option value="Sumatra Selatan">Sumatra Selatan</option>
+                <option value="Sumatra Utara">Sumatra Utara</option>
+              </select>
             </div>
+
 
             {{-- <div class="mb-4">
               <label for="file" class="block text-gray-700 dark:text-gray-300 mb-2">Upload File</label>
@@ -336,5 +413,12 @@
         reader.readAsDataURL(file);
       }
     }
+
+    $(document).ready(function() {
+        $('#region-select').select2({
+            placeholder: '-- Pilih Provinsi --',
+            allowClear: true
+        });
+    });
   </script>
 </x-app-layout>
