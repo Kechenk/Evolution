@@ -56,8 +56,8 @@
             <ul>
                 <li><a href="About\About.html">Tentang Kami</a></li>
                 <li><a href="#sub-event">Event</a></li>
-                <li><a href="Register Page\index.html" class="register-btn" style="margin: 0%;">Register</a></li>
-                <li><a href="Login Page\index.html" class="login-btn" style="margin: 0%;">Login</a></li>
+                <li><a href="/daftar" class="register-btn" style="margin: 0%;">Register</a></li>
+                <li><a href="/masuk" class="login-btn" style="margin: 0%;">Login</a></li>
             </ul>
         </nav>
     </div>
