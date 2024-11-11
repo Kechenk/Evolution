@@ -22,6 +22,7 @@ return new class extends Migration
       $table->string('whatsapp');
       $table->string('tweet');
       $table->string('region');
+      $table->string('file');
       $table->timestamps();
     });
   }

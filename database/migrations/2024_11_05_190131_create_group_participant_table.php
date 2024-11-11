@@ -27,6 +27,7 @@ return new class extends Migration
       $table->string('school_name');
       $table->string('school_address');
       $table->string('region');
+      $table->string('file');
       $table->timestamps();
     });
   }

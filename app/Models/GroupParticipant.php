@@ -23,5 +23,6 @@ class GroupParticipant extends Model
       'school_name',
       'school_address',
       'region',
+      'file',
     ];
 }

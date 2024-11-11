@@ -19,7 +19,10 @@ class SoloParticipantController extends Controller
       'whatsapp' => 'required|string',
       'tweet' => 'required|string',
       'region' => 'required|string',
+      'file' => 'required|image|max:2048'
     ]);
+
+      $filePath = $request->file('file')->store('uploads/private');
 
     SoloParticipant::create([
         'team' => $request->team,
@@ -31,6 +34,7 @@ class SoloParticipantController extends Controller
         'whatsapp' => $request->whatsapp,
         'tweet' => $request->tweet,
         'region' => $request->region,
+        'file' => $filePath,
     ]);
     return redirect()->back()->with('success', 'Individual registration submitted successfully!');
   }

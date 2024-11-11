@@ -24,7 +24,10 @@ class GroupParticipantController extends Controller
       'school_name' => 'required|string',
       'school_address' => 'required|string',
       'region' => 'required|string',
+      'file' => 'required|image|max:2048'
     ]);
+
+    $filePath = $request->file('file')->store('uploads/private');
 
     GroupParticipant::create([
       'team' => $request->team,
@@ -40,6 +43,7 @@ class GroupParticipantController extends Controller
       'school_name' => $request->school_name,
       'school_address' => $request->school_address,
       'region' => $request->region,
+      'file' => $filePath,
     ]);
     return redirect()->back()->with('success', 'Beregu registration submitted successfully!');
   }

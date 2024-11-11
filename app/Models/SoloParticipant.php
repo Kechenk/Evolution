@@ -19,5 +19,6 @@ class SoloParticipant extends Model
       'whatsapp',
       'tweet',
       'region',
+      'file',
    ];
 }
