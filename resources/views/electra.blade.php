@@ -5,11 +5,10 @@
     </h2>
   </x-slot>
 
-  <div class="py-6 sm:py-12">
-
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-xl rounded-xl">
-        <div class="p-4 sm:p-6 text-gray-900 dark:text-gray-100 text-lg sm:text-2xl text-center sm:text-left">
+  <div class="py-12">
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+      <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+        <div class="p-6 text-gray-900 dark:text-gray-100 text-2xl">
           Silahkan Memilih Opsi Berikut ini
         </div>
       </div>
@@ -53,7 +52,7 @@
         <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-6">
           <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">Tunggal Registration Form</h3>
 
-          <form method="POST" action="{{ route('tunggal.register') }}" class="mt-4">
+          <form method="POST" action="{{ route('tunggal.register') }}" class="mt-4" enctype="multipart/form-data">
             @csrf
 
             <div class="mb-4">
@@ -168,6 +167,25 @@
               </select>
             </div>
 
+            <div class="p-10">
+              <input type="file" name="file" id="file" class="sr-only" />
+              <label for="file"
+                class="relative flex min-h-[200px] items-center justify-center rounded-xl border border-dashed border-[#e0e0e0] p-12 text-center bg-white">
+                <div>
+                  <span class="mb-2 block text-xl font-semibold text-[#07074D]">
+                    Drop files here
+                  </span>
+                  <span class="mb-2 block text-base font-medium text-[#6B7280]">
+                    Or
+                  </span>
+                  <span
+                    class="inline-flex rounded border border-[#e0e0e0] py-2 px-7 text-base font-medium text-[#07074D]">
+                    Browse
+                  </span>
+                </div>
+              </label>
+            </div>
+
             {{-- <div class="mb-4">
               <label for="file" class="block text-gray-700 dark:text-gray-300 mb-2">Upload File</label>
               <div
@@ -186,7 +204,8 @@
               </div>
             </div> --}}
 
-            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Register</button>
+            <button type="submit"
+              class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Register</button>
           </form>
         </div>
       </div>
@@ -196,7 +215,7 @@
       <div id="bereguForm" class="mt-8 hidden">
         <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-6">
           <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Beregu Registration Form</h3>
-          <form method="POST" action="{{ route('beregu.register') }}" class="mt-4">
+          <form method="POST" action="{{ route('beregu.register') }}" class="mt-4" enctype="multipart/form-data>
             @csrf
 
             <div class="mb-4">
@@ -268,7 +287,7 @@
               <label class="block text-gray-700 dark:text-gray-300 mb-1">Nomer Whatsapp Ketua</label>
               <div class="flex items-center border rounded-xl border-gray-300 dark:border-gray-700">
                 <span
-                  class="px-6 text-gray-700 dark:text-gray-300 font-bold bg-gray-100 dark:bg-gray-900 rounded-l-xl">+62</span>
+                  class="p-2 text-gray-700 dark:text-gray-300 font-bold bg-gray-100 dark:bg-gray-900 rounded-l-xl">+62</span>
                 <input type="text" name="leader_whatsapp"
                   class="w-full p-2 border-l-0 rounded-r-xl border-gray-300 dark:border-gray-700 focus:outline-none"
                   placeholder="8123456789" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
@@ -279,7 +298,7 @@
               <label class="block text-gray-700 dark:text-gray-300 mb-1">Nomer Whatsapp Anggota</label>
               <div class="flex items-center border rounded-xl border-gray-300 dark:border-gray-700">
                 <span
-                  class="px-6 text-gray-700 dark:text-gray-300 font-bold bg-gray-100 dark:bg-gray-900 rounded-l-xl">+62</span>
+                  class="p-2 text-gray-700 dark:text-gray-300 font-bold bg-gray-100 dark:bg-gray-900 rounded-l-xl">+62</span>
                 <input type="text" name="member_whatsapp"
                   class="w-full p-2 border-l-0 rounded-r-xl border-gray-300 dark:border-gray-700 focus:outline-none"
                   placeholder="8123456789" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
@@ -343,6 +362,24 @@
               </select>
             </div>
 
+            <div class="p-10">
+              <input type="file" name="file" id="file" class="sr-only" />
+              <label for="file"
+                class="relative flex min-h-[200px] items-center justify-center rounded-xl border border-dashed border-[#e0e0e0] p-12 text-center bg-white">
+                <div>
+                  <span class="mb-2 block text-xl font-semibold text-[#07074D]">
+                    Drop files here
+                  </span>
+                  <span class="mb-2 block text-base font-medium text-[#6B7280]">
+                    Or
+                  </span>
+                  <span
+                    class="inline-flex rounded border border-[#e0e0e0] py-2 px-7 text-base font-medium text-[#07074D]">
+                    Browse
+                  </span>
+                </div>
+              </label>
+            </div>
 
             {{-- <div class="mb-4">
               <label for="file" class="block text-gray-700 dark:text-gray-300 mb-2">Upload File</label>
@@ -408,17 +445,17 @@
         reader.onload = function() {
           preview.src = reader.result;
           preview.classList.remove("hidden");
-          fileNameDisplay.textContent = file.name;
+           fileNameDisplay.textContent = file.name;
         };
         reader.readAsDataURL(file);
       }
     }
 
     $(document).ready(function() {
-        $('#region-select').select2({
-            placeholder: '-- Pilih Provinsi --',
-            allowClear: true
-        });
+      $('#region-select').select2({
+        placeholder: '-- Pilih Provinsi --',
+        allowClear: true
+      });
     });
   </script>
 </x-app-layout>
