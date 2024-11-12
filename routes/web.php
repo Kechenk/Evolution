@@ -38,7 +38,7 @@ Route::get('/olympic', function () {
 })->middleware(['auth', 'verified'])->name('olympic');
 
 Route::post('/register/tunggal', [SoloParticipantController::class, 'registerTunggal'])->name('tunggal.register');
-Route::post('/register/beregu', [GroupParticipantController::class, 'registerberegu'])->name('beregu.register');
+Route::post('/register/beregu', [GroupParticipantController::class, 'registerBeregu'])->name('beregu.register');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
